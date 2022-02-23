@@ -1,0 +1,313 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menuBlock {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 943px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.blackHover {
+    color: #828282;
+}
+
+.selected {
+    color: #070707;
+}
+
+.blackHover:hover {
+    color: #070707;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.line {
+    background-color: #828282;
+    height: 3px;
+}
+
+.lang {
+    display: flex;
+    transform: rotate(-90deg);
+}
+
+.lang p {
+    margin: 0 3px;
+}
+
+.textInfo {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    margin: auto 0;
+}
+
+.nameInfo {
+    font-size: 35px;
+    width: 5%;
+}
+
+.image {
+    background-image: url("https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1646006400&Signature=b58M2MHEAFdODCpBWI47CN1u~icPA~7qFUAvoeF-6gLhACQbqeg8qb3vZPhSMUdpLjBxYv4UvWHlf7C02T7P7VuXgPqBq6ufu8En0guuqlOUKZYZAsBHCQM5ap021MBZTIueWdSE5Hs-pYNk4jkCGarZhgIr4J1V08PhUAtlineZmIgGLmNZzVut702YdC0Zt3YzKyHto1fMwDw0WuvXX0aFIFPUIP9QsEKFXUfGmz-Q1DXxcSvXi2KJ~0SYeImJETpKrvIxZ8f43rc3VVN0Y-kbtONAZsseQ2kP8~bk3BNXKh7aFkMUBMWnikIeeGvS5Ub9BSy6~2ZEc7-an3HnDg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 40%;
+    margin-bottom: 40px;
+}
+
+#sectionAboutMe {
+   background-color: #F6F6F6;
+}
+
+.aboutMe {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.mySkills {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionSkills {
+    padding: 50px 0;
+}
+
+.mySkills {
+    margin: 50px 0;
+}
+
+#sectionPortfolio {
+    background-color: #F6F6F6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolioTitle {
+    margin: 30px 0;
+}
+
+.portfolioPhoto {
+    margin: 30px 0;
+    width: 943px;
+}
+
+.portfolioLinks {
+    color: #070707;
+    text-decoration:underline;
+}
+
+.contacts {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.sendMessage {
+    background-color: #070707;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.portfolio {
+    margin-bottom: 50px;
+}
+
+#footer {
+    padding: 100px 0;
+}
+
+.contactsLinks {
+    margin: 60px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+    .container { 
+        width: 700px;
+    }
+
+    .portfolioPhoto {
+        width: 700px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container { 
+        width: 500px;
+    }
+
+    .portfolioPhoto {
+        width: 500px;
+    }
+
+    .mySkills {
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .container { 
+        width: 400px;
+    }
+
+    .portfolioPhoto {
+        width: 400px;
+    }
+
+    .skill {
+        width: 200px;
+    }
+
+    .textInfo {
+        display: block;
+        text-align: center;
+    }
+
+    .nameInfo {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .lang {
+        display: flex;
+        transform: rotate(0);
+        width: 50px;
+        margin: 20px auto;
+    }
+
+    .blackHover {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .container { 
+        width: 300px;
+    }
+
+    .portfolioPhoto {
+        width: 300px;
+    }
+}
+
+@media (max-width: 340px) {
+    body {
+        position: relative;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+    .lang {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nameInfo {
+        width: 80px;
+    }
+
+    .textInfo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        border: none;
+        background: none;
+    }
+
+    #menuBtn {
+        margin-top: 50%;
+    }
+
+    .menuBlock {
+        background-color: #F6F6F6;
+        position: absolute;
+        width: 100%;
+    }
+
+    .menuTitle {
+        margin: 20px; 
+    }
+
+    .blackHover {
+        display: block;
+        font-size: 30px;
+        margin: 20px 30px;
+    }
+
+    .menuHeader {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuHeader>svg {
+        margin: 20px; 
+    }
+
+    .langMenu {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    .langMenu a {
+        font-size:20px;
+        margin: 20px auto;
+    }
+
+    .langMenu p {
+        margin: auto 3px;
+    }
+}
